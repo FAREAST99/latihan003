@@ -2,29 +2,52 @@
 <html>
 <head>
     <style>
-        table, th ,td{
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: rgb(55, 135, 255);
+        
+            
+            
+        }
+        td, th {
             border: 1px solid black;
             border-collapse: collapse;
             background-color: aquamarine;
+            height: 100px;
+            width: 100px;
+            
         }
     </style>
 </head>
 
 <body>
-    <h2>HTML Tables</h2>
+    <h2>BANNER</h2>
 
     <table>
         <tr text-align: center>
-            <th style="width: 40%">NIKE</th>
-            <th style="width: 40%">ADIDAS</th>
-            <th style="width: 40%">SNEAKERS</th>
+            <th colspan="3"><img src="banner.png" height="500px" width="1500px"></th>
         </tr>
         <tr>
-            <td><img src="download.jpg" width="200" height="200"  /></td>
-            <td><img src="adidas.webp"  width="200" height="200"  /></td>
-            <td><img src="jordan.jpg"   width="200" height="200"  /></td>
+            <th>MENU</th> 
+            <td rowspan="2"><img src="adidas.webp" height="400px" width="500px"></td>
+            <td rowspan="2"><img src="download.jpg" height="400px" width="500px"></td>
         </tr>
-        
+           <th>POPULAR</th>
+        <tr>
+            <th>LATEST DAY</th>
+            <td rowspan="2"><img src="jordan.jpg" height="400px" width="500px"></td>
+            <td rowspan="2"><img src="nike.jpg" height="400px" width="500px"></td>
+
+        </tr>
+
+        <tr>
+            <th>50%</th>
+        </tr>
+
+        <tr>
+            <td style="text-align: center;" colspan="3" >CONTACT US</td>
+        </tr>
     </table>
 </body>
 </html>
